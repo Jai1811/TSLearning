@@ -1,0 +1,3 @@
+let xyz : void = undefined;
+
+
