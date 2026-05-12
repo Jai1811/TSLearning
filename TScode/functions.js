@@ -38,3 +38,14 @@ function greet(person) {
 }
 const person = { name: "Alice", age: 30 };
 greet(person);
+//optional parameters
+function getInformation(name, age) {
+    return name + age;
+} //age is the optional parameter
+console.log(getInformation("John", 23));
+//default parameters
+function setDetails(name, age = 18) {
+    return name + age;
+}
+console.log(setDetails("Alice"));
+console.log(setDetails("Bob", 25));

@@ -38,6 +38,7 @@ lastName: string;
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
 }
 
 let person1 = new PersonClass("John", "Doe"); 
@@ -55,3 +56,16 @@ function greet(person: Person): void {
 const person: Person = { name: "Alice", age: 30 };
 greet(person);
 
+//optional parameters
+function getInformation(name:string, age?:number): string {
+return name + age;
+}//age is the optional parameter
+console.log(getInformation("John", 23));
+
+    //default parameters
+function setDetails(name:string, age:number =18): string{
+return name + age;
+}
+
+console.log(setDetails("Alice"));
+console.log(setDetails("Bob", 25));
